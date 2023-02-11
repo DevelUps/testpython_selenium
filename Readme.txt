@@ -14,7 +14,7 @@ Instale las dependencias necesarias ejecutando el siguiente comando en su termin
 1. Descargue el archivo ejecutable del controlador de Chrome (chromedriver.exe) y guárdelo en una ubicación conocida.
 2. Instale las dependencias necesarias ejecutando el siguiente comando en su terminal o consola:
 
-> pip install selenium
+> pip install -r requirements.txt
 
 3.Abra el archivo main.py en su editor de código y modifique la línea siguiente para especificar la ruta correcta al archivo ejecutable del controlador de Chrome:
 > driver = webdriver.Chrome("executable_path=C:\Drivers\chromedriver.exe")
