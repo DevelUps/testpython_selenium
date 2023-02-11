@@ -1,29 +1,25 @@
-Automatización de pruebas con Python y Selenium
-Este proyecto utiliza la biblioteca Selenium para automatizar pruebas en la web.
+Automating Tests with Python and Selenium
+This project uses the Selenium library to automate tests on the web.
 
-Requisitos
--Python 3.x
--Selenium
--Archivo ejecutable del controlador de Chrome (chromedriver.exe)
+Requirements
 
-Uso
-Descargue el archivo ejecutable del controlador de Chrome (chromedriver.exe) y guárdelo en una ubicación conocida.
-Instale las dependencias necesarias ejecutando el siguiente comando en su terminal o consola:
+Python 3.x
+Selenium
+Chrome Driver Executable File (chromedriver.exe)
+Usage
 
+Download the Chrome Driver Executable File (chromedriver.exe) and save it in a known location.
+Install the necessary dependencies by running the following command in your terminal or console:
+pip install -r requirements.txt
 
-1. Descargue el archivo ejecutable del controlador de Chrome (chromedriver.exe) y guárdelo en una ubicación conocida.
-2. Instale las dependencias necesarias ejecutando el siguiente comando en su terminal o consola:
+Open the main.py file in your code editor and modify the following line to specify the correct path to the Chrome Driver Executable File:
+driver = webdriver.Chrome("executable_path=C:\Drivers\chromedriver.exe")
 
-> pip install -r requirements.txt
+Run the script with the following command in your terminal or console:
+python main.py
 
-3.Abra el archivo main.py en su editor de código y modifique la línea siguiente para especificar la ruta correcta al archivo ejecutable del controlador de Chrome:
-> driver = webdriver.Chrome("executable_path=C:\Drivers\chromedriver.exe")
+Operation
+The script takes care of opening a Chrome browser window, navigating to the https://demoqa.com/ web page, printing a welcome message and the current web page title to the console, waiting for 5 seconds, and finally closing the browser window.
 
-4. Ejecute el script con el siguiente comando en su terminal o consola:
->  python main.py
-
-Funcionamiento
-El script se encarga de abrir una ventana de navegador de Chrome, navegar a la página web https://demoqa.com/, imprimir en la consola un mensaje de bienvenida y el título de la página web actual, esperar 5 segundos y finalmente cerrar la ventana del navegador
-
-Advertencia
-Este script se proporciona solo con fines educativos y de demostración. No se garantiza su correcto funcionamiento en todas las situaciones y puede producir errores no deseados en el sistema. Use bajo su propia responsabilidad.
+Warning
+This script is provided for educational and demonstration purposes only. Its correct operation in all situations is not guaranteed and it may produce unintended errors in the system. Use at your own risk.
