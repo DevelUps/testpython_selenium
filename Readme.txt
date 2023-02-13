@@ -15,8 +15,11 @@ pip install -r requirements.txt
 Open the main.py file in your code editor and modify the following line to specify the correct path to the Chrome Driver Executable File:
 driver = webdriver.Chrome("executable_path=C:\Drivers\chromedriver.exe")
 
-Run the script with the following command in your terminal or console:
-python main.py
+FOR Run the scripts with the following command in your terminal or console:
+python "name.py"
+test1_XPATH_sel 
+test2_ID_sel
+test3_CSS_sel
 
 Operation
 The script takes care of opening a Chrome browser window, navigating to the https://demoqa.com/ web page, printing a welcome message and the current web page title to the console, waiting for 5 seconds, and finally closing the browser window.
