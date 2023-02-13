@@ -18,7 +18,10 @@ driver.find_element(By.ID,"userName").send_keys("Pierre")
 driver.find_element(By.ID,"userEmail").send_keys("unemail@hotmail.com")
 driver.find_element(By.ID,"currentAddress").send_keys(" una direccion tal ")
 driver.find_element(By.ID,"permanentAddress").send_keys(" una direccion tal permanente ")
+driver.find_element(By.ID,"submit").click()
 
-time.sleep(10)
+
+
+time.sleep(3)
 # Cerramos la ventana del navegador usando el método 'close' en el objeto 'driver'
 driver.close()
