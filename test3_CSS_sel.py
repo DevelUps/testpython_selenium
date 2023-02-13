@@ -12,13 +12,19 @@ driver.maximize_window()
 
 # Navegamos a la página web especificada en el URL usando el método 'get' en el objeto 'driver'
 driver.get("https://demoqa.com/text-box")
+time.sleep(1)
 
 # Envía una cadena al elemento con id "userName"
-driver.find_element(By.ID,"userName").send_keys("Pierre")
-driver.find_element(By.ID,"userEmail").send_keys("unemail@hotmail.com")
-driver.find_element(By.ID,"currentAddress").send_keys(" una direccion tal ")
-driver.find_element(By.ID,"permanentAddress").send_keys(" una direccion tal permanente ")
-driver.find_element(By.ID,"submit").click()
+driver.find_element(By.CSS_SELECTOR,"#userName").send_keys("Pierre")
+time.sleep(1)
+driver.find_element(By.CSS_SELECTOR,"#userEmail").send_keys("unemail@hotmail.com")
+time.sleep(1)
+driver.find_element(By.CSS_SELECTOR,"#currentAddress").send_keys(" una direccion tal ")
+time.sleep(1)
+driver.find_element(By.CSS_SELECTOR,"#permanentAddress").send_keys(" una direccion tal permanente ")
+time.sleep(1)
+driver.find_element(By.CSS_SELECTOR,"#submit").click()
+time.sleep(1)
 
 
 
