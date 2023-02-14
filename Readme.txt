@@ -16,7 +16,7 @@ Open the main.py file in your code editor and modify the following line to speci
 driver = webdriver.Chrome("executable_path=C:\Drivers\chromedriver.exe")
 
 FOR Run the scripts with the following command in your terminal or console:
-python "name.py"
+python "name.py"git p
 test1_XPATH_sel 
 test2_ID_sel
 test3_CSS_sel
