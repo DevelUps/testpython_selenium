@@ -10,61 +10,24 @@ driver = webdriver.Chrome("executable_path=C:\Drivers\chromedriver.exe")
 t=4
 # Maximiza la ventana
 driver.maximize_window()
-print("Bienvenido al sistema de busqueda de portales de empleo")
+# Imprimimos mensaje de bienvenida
+print("Bienvenido al sistema de búsqueda de portales de empleo")
 print("En breve te mostrare varias opciones de portales de empleos")
-# Navegamos a la página web especificada en el URL usando el método 'get' en el objeto 'driver'
-print("linkedin")
-driver.get("https://www.linkedin.com/")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-print("el empleo")
-driver.get("https://www.elempleo.com/")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-print("eficacia")
-driver.get("https://eficacia.zohorecruit.com/")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-print("michaelpage")
-driver.get("https://www.michaelpage.com.co/")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-print("falabella")
-driver.get("https://falabella.airavirtual.com/l")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-print("infojobs")
-driver.get("https://www.infojobs.net/")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-print("magneto365")
-driver.get("https://login.magneto365.com/c")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-print("servicio de empleo")
-driver.get("https://personas.serviciodeempleo.gov.co/")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-print("ticjob")
-driver.get("https://ticjob.co/es/")
-time.sleep(4)
-driver.execute_script("window.history.go(-4)")
-driver.back()
-time.sleep(4)
-driver.back()
-time.sleep(4)
-driver.back()
-time.sleep(4)
-driver.back()
-time.sleep(4)
-driver.back()
-time.sleep(4)
-driver.back()
-time.sleep(4)
-driver.back()
-time.sleep(4)
-driver.back()
-time.sleep(2)
 
+# Navegamos a cada sitio web de portal de empleo y luego volvemos atrás en cada uno
+sites = ["https://www.linkedin.com/", "https://www.elempleo.com/", "https://eficacia.zohorecruit.com/",
+         "https://www.michaelpage.com.co/", "https://falabella.airavirtual.com/l", "https://www.infojobs.net/",
+         "https://login.magneto365.com/", "https://personas.serviciodeempleo.gov.co/", "https://ticjob.co/"]
+for site in sites:
+    print(site)
+    driver.get(site)
+    time.sleep(0.5)
+    driver.back()
+    driver.execute_script("window.history.go(-1)")
+   
+
+# Imprimimos mensaje de despedida
 print("Gracias por visitarnos, hasta pronto!")
+
+# Cerramos el objeto 'webdriver' de Chrome
 driver.close()

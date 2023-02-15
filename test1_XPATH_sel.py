@@ -29,5 +29,5 @@ time.sleep(1)
 
 
 time.sleep(3)
-# Cerramos la ventana del navegador usando el método 'close' en el objeto 'driver'
+# Cerramos la ventana del navegador usando el método 'close' en el objeto 'driver'.
 driver.close()
