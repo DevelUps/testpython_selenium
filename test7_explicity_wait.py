@@ -14,7 +14,7 @@ driver.get("https://captchacoolnow.top/robot4/?c=e2738330-7423-4b60-8da6-16d48a4
 #maximiza la ventana
 driver.maximize_window()
 driver.implicitly_wait(10)
-t=4
+t=3
 
 wait = WebDriverWait(driver, 10)
 btn = wait.until(EC.element_to_be_clickable((By.ID, '//*[@id="text1"]')))
