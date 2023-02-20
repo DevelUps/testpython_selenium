@@ -6,6 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import TimeoutException
 print("Drivers have been successfully loaded.")
 
 # Instantiate a Chrome 'webdriver' object by specifying the path to the Chrome driver executable file
@@ -27,7 +28,9 @@ print("Implicitly waiting for 10 seconds for the page to load.")
 # Time delay for the execution of each task
 t = 0.01
 print("Locate if the element exists")
-#day = WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.ID, "//select[contains(@id,'wsf-1-field-53')]")))
+#day = WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.ID, "//select[contains(@id,'wsf-1-field-53')]")))#
+# "First block
+
 daySelect=driver.find_element(By.XPATH,"//select[@id='select-demo']")
 driver.execute_script("window.scrollTo(0,500)")
 day = Select(daySelect)
