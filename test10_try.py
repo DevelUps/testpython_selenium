@@ -11,7 +11,7 @@ print("Drivers have been successfully loaded.")
 
 # Instantiate a Chrome 'webdriver' object by specifying the path to the Chrome driver executable file
 driver = webdriver.Chrome("executable_path=C:\Drivers\chromedriver.exe")
-#driver = webdriver.Firefox(("executable_path=C:\Drivers\geckodriver.exe")
+
 print("Drivers have been successfully loaded.")
 
 # Navigate to the web page specified in the URL using the 'get' method on the 'driver' object
@@ -22,7 +22,7 @@ print("Web page has been successfully loaded.")
 driver.maximize_window()
 print("Window has been maximized.")
 # Time delay for the execution of each task
-t = 0.01
+t = 0.001
 print("Locate if the element exists")
 #day = WebDriverWait(driver,10).until(EC.visibility_of_element_located((By.ID, "//select[contains(@id,'wsf-1-field-53')]")))#
 # "First block
